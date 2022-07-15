@@ -1,0 +1,51 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint-config-airbnb-base"
+  ],
+  "jsRules": {
+    "no-unused-expression": true
+  },
+  "rules": {
+    "completed-docs": [
+      true,
+      "classes",
+      "enums",
+      "enum-members",
+      "functions",
+      "interfaces",
+      "methods",
+      "namespaces",
+      "types"
+    ],
+    "max-line-length": [true, 100],
+    "ter-max-len": [true, 100],
+    "trailing-comma": false,
+    "quotemark": [true, "single"],
+    "object-literal-key-quotes": [true, "consistent"],
+    "arrow-parens": [true],
+    "ter-arrow-parens": [
+      true,
+      "always",
+      { "requireForBlockBody": true }
+    ],
+    "no-empty": [true, "allow-empty-functions"],
+    "no-bitwise": true,
+    "no-console": true,
+    "use-default-type-parameter": true,
+    "no-unnecessary-initializer": true,
+    "no-unnecessary-qualifier": true,
+    "space-before-function-paren": true,
+    "no-magic-numbers": false,
+    "no-return-await": true,
+    "array-type": [true, "array-simple"],
+    "variable-name": [
+      true,
+      "allow-leading-underscore"
+    ]
+  },
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": ["build", "node_modules", "webpack.config.ts"]
+  }
+}
