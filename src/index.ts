@@ -14,6 +14,8 @@ app.use(
 );
 
 app.get('/api/:url', (req, res) => {
+  // tslint:disable-next-line:no-console
+  console.log(req.params.url);
   if (Math.random() > 0.5) res.sendStatus(200);
   else res.sendStatus(400);
 });
